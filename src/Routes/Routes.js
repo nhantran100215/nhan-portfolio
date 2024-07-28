@@ -12,8 +12,9 @@ const Routes = [
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
-        element: <PortfolioPage />
+        path: '/nhan-portfolio',
+        element: <PortfolioPage />,
+        errorElement: <ErrorPage />
       },
       {
         path: '/:projectId',

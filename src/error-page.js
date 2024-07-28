@@ -8,7 +8,7 @@ export default function ErrorPage() {
   console.error(error);
 
   return (
-    <div id="error-page">
+    <div id="error-page" className="prevent-select">
       <div className="header">
         <span className="logo">⚔️V͓̽N͓̽H͓̽A͓̽N͓̽⚔️</span>
         <span className="title">My Portfolio</span>
