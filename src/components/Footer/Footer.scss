@@ -1,0 +1,25 @@
+.footer{
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px;
+    p,span{
+        color: var(--PrimaryHoverColor);
+        font-weight: 200;
+        letter-spacing: normal;
+        word-spacing: -5px;
+        line-height: 24px;
+    }
+    h3{
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    a,.link{
+        text-decoration: none;
+        color: var(--PrimaryBrightColor);
+        font-weight: 600;
+        margin-left: 5px;
+        font-size: 18px;
+    }
+}

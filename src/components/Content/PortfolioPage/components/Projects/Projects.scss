@@ -1,0 +1,99 @@
+@use "src/styles/variables.scss";
+.filterProject{
+    width: 100%;
+    margin: 10px;
+    &-field{
+        text-decoration: underline;
+        margin: 20px 0;
+    }
+    &-keyword{
+        display: inline-block;
+        padding: 10px 5px;
+        margin: 10px 5px;
+        @extend .box-shadow-thin;
+        border-radius: 2px;
+        &:hover{
+            @extend .box-shadow;
+        }
+    }
+    &-select{
+        background-color: #999;
+    }
+}
+
+.projects{
+    // display: flex;
+    // justify-content: center;
+    @media all and (min-width: 583px) {
+        min-height: 730px;
+    }
+    .banner{
+        margin: 2.5%;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        border-radius: 10px;
+        @media all and (min-width: 768px) {
+            width: 45%; /* 22.5% of the parent's width */
+            padding-bottom: 30%; /* (25% of the parent's width) * 2.25 */
+        }
+        @media all and (max-width: 768px) {
+            width: 95%; /* 22.5% of the parent's width */
+            margin: 2.5%;
+            padding-bottom: 60%; /* (25% of the parent's width) * 2.25 */
+    }
+        .infocover{
+            position: absolute;
+            width: 100%;
+            top:0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--SecondColorRGPA);
+            overflow: hidden;
+            .skills{
+                text-align: center;
+                display: inline-block;
+                width: 100%;
+            }
+            .skill{
+                color: var(--PrimaryColorRGPA);
+                display: inline-block;
+                padding: 4px;
+                background-color: var(--SecondColor);
+                margin: 2px;
+                border-radius: 3px;
+            }
+            .more{
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                // transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.projectPagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .paginationPoint{
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: var(--PrimaryColor);
+        margin: 5px;
+        border-radius: 50%;
+    }
+    .unchoosed{
+        border: 2px solid var(--PrimaryHoverColor);
+    }
+    .choosed{
+        border: 2px solid var(--PrimaryColor);
+        background-color: var(--textColor);
+    }
+}
+

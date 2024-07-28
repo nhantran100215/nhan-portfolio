@@ -1,0 +1,18 @@
+.MyCarousel{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Carousel-img{
+        width: 90%;
+        border: 0.5px solid var(--blackRGBA);
+        border-radius: 5px;
+        box-shadow: 8px 8px 1px var(--textColor);
+        -webkit-box-shadow: 8px 8px 1px var(--textColor);
+        -moz-box-shadow: 8px 8px 1px var(--textColor);
+    }
+}
+// .react-multi-carousel-dot-list .custom-dot-list-style
+// .react-multi-carousel-dot-list.custom-dot-list-style{
+//     bottom: -3px;
+// }

@@ -1,0 +1,30 @@
+@use "src/styles/variables.scss";
+
+.ConnectWithMe-horizontal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ConnectWithMe{
+    margin: 10px 0;
+    .connection{
+        background-color: rgba(5, 0, 0, 0.3);
+        @extend .box-shadow-thin;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin: 20px 10px;
+        &-icon{
+            width: 30px;
+            height: 30px;
+            &:hover{
+                width: 40px;
+                height: 40px;
+                transition: .2s all ease-in-out;
+            }
+        }
+    }
+}

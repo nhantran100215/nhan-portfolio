@@ -1,0 +1,59 @@
+:root{
+    --PrimaryColor: white;
+    --PrimaryColorRGPA: rgba(255, 255, 255, 0.551);
+    --PrimaryHoverColor: rgb(167, 162, 162);
+    --PrimaryBrightColor: rgb(210, 203, 203);
+    --SecondColor: #212529;
+    --SecondColorRGPA: rgba(33, 37, 41, 0.7);
+    --ThirdColor:rgb(31, 31, 244);
+    --ThirdHoverColor:rgb(31 31 244 / 66%);
+    --SuccessColor:#036904;
+    --SuccessBackgroundColor:#8aa58bfa;
+    --ErrorColor:#b11308;
+    --ErrorBackgroundColor:#e4a5a1;
+    --headerHeight:50px;
+    --textColor:black;
+    --blackRGBA:rgba(0, 0, 0, 0.444);
+}
+
+
+.fontSize-T1{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.fontsize-T2{
+    font-size: 40px;
+}
+
+.primaryColor{
+    color: var(--PrimaryColor);
+}
+
+.secondColor{
+    color: var(--SecondColor);
+}
+
+.thirdColor{
+    color: var(--ThirdColor);
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.box-shadow-thin{
+    box-shadow: 0px 0px 10px var(--ThirdColor);
+}
+.box-shadow{
+    box-shadow: 0 0px 32px var(--ThirdColor);
+}
+.box-shadow-line{
+    box-shadow: 0px 0.5px 32px var(--ThirdColor);
+}

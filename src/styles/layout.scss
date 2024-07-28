@@ -1,0 +1,95 @@
+@use "src/styles/variables.scss";
+
+.webcontent{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: var(--SecondColor);
+    color: var(--PrimaryColor);
+    overflow: hidden;
+    font-size: 1.3rem;
+}
+
+.wrapWebHeader{
+    .vitualHeader{
+        height: var(--headerHeight);
+    }
+    .webHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        top: 0px;
+        width: 100%;
+        height: var(--headerHeight);
+        color: var(--PrimaryColor);
+        background-color: var(--SecondColorRGPA);
+        backdrop-filter: blur(3px);
+        @extend .box-shadow-line;
+        .sideLeft{
+            padding: 10px;
+            margin-left: 10px;
+        }
+        .sideRight{
+            display: flex;
+            justify-content: space-between;
+            p{
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.button-hover-2-layer:hover{
+    position: relative;
+    &::after{
+        content: "";
+        background-color: rgba(255, 255, 255, 0.198);
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 50%;
+        animation-name: animationSize;
+        animation-duration: 0.5s;
+        animation-fill-mode:forwards;
+    }
+    &::before{
+        content: "";
+        background-color: rgba(255, 255, 255, 0.06);
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 50%;
+        animation-name: animationSize;
+        animation-duration: 0.5s;
+        animation-fill-mode:forwards;
+    }
+    @keyframes animationSize {
+        from {width: 0;}
+        to {width: 100%;}
+    }
+}
+
+h1{
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+h2{
+    margin: 30px 0 20px 0;
+    font-size: 32px;
+}
+
+.division-line{
+    width: 50%;
+    height: 1px;
+    background-color: var(--PrimaryHoverColor);
+}
+
+
+

@@ -1,0 +1,55 @@
+@use "src/styles/variables.scss";
+
+.ProjectPage{
+    white-space: pre-line;
+    width: 100%;
+    padding: 10px;
+    p,span{
+        color: var(--PrimaryHoverColor);
+        margin: 20px 0;
+        line-height:30px
+    }
+    .button-access{
+        display: inline-block;
+        padding: 10px 5px;
+            margin: 10px 5px;
+            @extend .box-shadow-thin;
+            border-radius: 2px;
+            &:hover{
+                @extend .box-shadow;
+            }
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 200;
+        color: white;
+    }
+    .tech-field{
+        color: var(--PrimaryHoverColor);
+        &-name{
+            text-decoration: underline;
+            font-size: 20px;
+        }
+        ul{
+            list-style-type: circle;
+            margin-left: 15px;
+            li{
+                // margin: 10px 0;
+                line-height: 40px;
+            }
+        }
+    }
+    .resources{
+        ul{
+            list-style-type: circle;
+            margin-left: 15px;
+            li{
+                // margin: 10px 0;
+                line-height: 40px;
+            }
+        }
+        a{
+            margin-left: 5px;
+            color: var(--PrimaryColor);
+        }
+    }
+}
