@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { UnderLineAnimation } from 'src/LibsComponent';
 import { CONST_VARI, variables } from 'src/utils';
+import { defaultPath } from 'src/Routes/Routes';
 
 const Header = () => {
   const headerCollection = variables.headerCollection;
@@ -16,7 +17,7 @@ const Header = () => {
           className="sideLeft"
           style={{ cursor: 'pointer' }}
           onClick={() => {
-            navigate('/');
+            navigate(defaultPath);
           }}>
           <span>⚔️V͓̽N͓̽H͓̽A͓̽N͓̽⚔️</span>
         </div>
@@ -31,8 +32,8 @@ const Header = () => {
               }}
               key={index}
               onClick={() => {
-                if (location.pathname !== '/') {
-                  navigate('/');
+                if (location.pathname !== defaultPath) {
+                  navigate(defaultPath);
                   setTimeout(() => {
                     const headerRef = headerCollection.getId(element.id);
                     headerRef.scrollIntoView({

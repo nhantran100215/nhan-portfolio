@@ -3,6 +3,7 @@ import React from 'react';
 import './Footer.scss';
 import { useNavigate } from 'react-router-dom';
 import { CONST_VARI, variables } from 'src/utils';
+import { defaultPath } from 'src/Routes/Routes';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -25,8 +26,8 @@ const Footer = () => {
             let contactLine = CONST_VARI.HEADER_LINE.filter(
               (header) => header.id === 'contactme'
             )[0];
-            if (location.pathname !== '/') {
-              navigate('/');
+            if (location.pathname !== defaultPath) {
+              navigate(defaultPath);
               setTimeout(() => {
                 const headerRef = headerCollection.getId(contactLine.id);
                 headerRef.scrollIntoView({

@@ -13,6 +13,7 @@ import { useNavigate } from 'react-router-dom';
 import { selectFilterProject } from 'src/Redux/reducer/filterSlice';
 import { selectProjectPagination, setAmount } from 'src/Redux/reducer/paginationSlice';
 import { CONST_VARI } from 'src/utils';
+import { defaultPath } from 'src/Routes/Routes';
 
 const calculateAmountSkill = () => {
   if (window.innerWidth > 1000) return 11;
@@ -66,7 +67,7 @@ const Banner = ({ data = [], project = {} }) => {
         setOpen(true);
       }}
       onMouseOut={() => open && setOpen(false)}
-      onClick={() => navigate(`/${project.id}`)}>
+      onClick={() => navigate(`${defaultPath}/${project.id}`)}>
       {/* cover info */}
       <animated.div className="infocover" style={{ ...rest, width: '100%', height: size }}>
         <div className="skills">

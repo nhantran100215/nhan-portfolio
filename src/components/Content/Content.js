@@ -4,6 +4,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Loading, WelcomeSlash } from 'src/LibsComponent';
 import useLoading from 'src/hook/useLoading';
 import Notification from '../Notification/Notification';
+import { defaultPath } from 'src/Routes/Routes';
 
 const Content = () => {
   const { loading, showLoading } = useLoading();
@@ -12,10 +13,10 @@ const Content = () => {
   const [createWelcomeSlash, setCreateWelcomeSlash] = useState(false);
 
   useEffect(() => {
-    if (location.pathname === '/' && !createWelcomeSlash) {
+    if (location.pathname === defaultPath && !createWelcomeSlash) {
       setCreateWelcomeSlash(true);
     }
-    if (location.pathname !== '/') {
+    if (location.pathname !== defaultPath) {
       showLoading({ show: true, timer: 1000 });
     }
   }, [location.pathname]);

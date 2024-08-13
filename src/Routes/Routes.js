@@ -1,23 +1,25 @@
 import React, { Suspense, lazy } from 'react';
 import WebContent from 'src/components';
-// import ErrorPage from 'src/error-page';
+import ErrorPage from 'src/error-page';
 import PortfolioPage from 'src/components/Content/PortfolioPage/PortfolioPage';
 import { CONST_VARI } from 'src/utils';
 // import ProjectPage from 'src/components/Content/ProjectPage/ProjectPage';
 const ProjectPage = lazy(() => import('src/components/Content/ProjectPage/ProjectPage'));
+export const defaultPath = '/nhan-portfolio';
+
 const Routes = [
   {
-    path: '/',
+    path: defaultPath,
     element: <WebContent />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        path: '/nhan-portfolio',
-        element: <PortfolioPage />
-        // errorElement: <ErrorPage />
+        path: defaultPath,
+        element: <PortfolioPage />,
+        errorElement: <ErrorPage />
       },
       {
-        path: '/:projectId',
+        path: `${defaultPath}/:projectId`,
         loader: ({ params }) => {
           let projectDetail = CONST_VARI.PROJECTS.filter(
             (project) => project.id === params.projectId

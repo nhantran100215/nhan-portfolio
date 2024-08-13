@@ -19,6 +19,7 @@ import Pflogin from 'public/Projects/portfolio/login.png';
 import Pfdashboard from 'public/Projects/portfolio/dashboard.png';
 import Pfprofile from 'public/Projects/portfolio/profile.png';
 import Pfcategory from 'public/Projects/portfolio/category.png';
+import { defaultPath } from 'src/Routes/Routes';
 
 const HEADER_LINE = [
   {
@@ -215,9 +216,7 @@ const PROJECTS = [
     image: {
       banner: Pflogin,
       listImage: [Pflogin, Pfdashboard, Pfprofile, Pfcategory]
-    },
-
-    url: '/'
+    }
   },
   {
     id: 'project-1',
