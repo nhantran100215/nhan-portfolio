@@ -5,7 +5,7 @@ import PortfolioPage from 'src/components/Content/PortfolioPage/PortfolioPage';
 import { CONST_VARI } from 'src/utils';
 // import ProjectPage from 'src/components/Content/ProjectPage/ProjectPage';
 const ProjectPage = lazy(() => import('src/components/Content/ProjectPage/ProjectPage'));
-export const defaultPath = '/nhan-portfolio';
+export const defaultPath = '/';
 
 const Routes = [
   {

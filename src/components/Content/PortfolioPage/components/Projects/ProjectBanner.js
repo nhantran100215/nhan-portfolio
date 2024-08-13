@@ -67,7 +67,9 @@ const Banner = ({ data = [], project = {} }) => {
         setOpen(true);
       }}
       onMouseOut={() => open && setOpen(false)}
-      onClick={() => navigate(`${defaultPath}/${project.id}`)}>
+      onClick={() =>
+        navigate(defaultPath === '/' ? `/${project.id}` : `${defaultPath}/${project.id}`)
+      }>
       {/* cover info */}
       <animated.div className="infocover" style={{ ...rest, width: '100%', height: size }}>
         <div className="skills">
