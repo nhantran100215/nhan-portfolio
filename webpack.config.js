@@ -15,7 +15,7 @@ module.exports = {
   },
   output: {
     path: buildPath,
-    publicPath: `${buildPath}/nhan-portfolio/`,
+    publicPath: `https://nhantran100215.github.io/${buildPath}/nhan-portfolio/`,
     filename: '[name].js',
     chunkFilename: '[name].chunk.js'
   },
