@@ -11,12 +11,12 @@ const Routes = [
   {
     path: defaultPath,
     element: <WebContent />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: defaultPath,
         element: <PortfolioPage />,
-        // errorElement: <ErrorPage />
+        errorElement: <ErrorPage />
       },
       {
         path: `${defaultPath}/:projectId`,
