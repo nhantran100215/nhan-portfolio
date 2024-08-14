@@ -1206,7 +1206,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "https://nhantran100215.github.io/D:\\working\\my_project\\Portfolio\\build/nhan-portfolio/";
+/******/ 		__webpack_require__.p = "https://nhantran100215.github.io/nhan-portfolio/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
