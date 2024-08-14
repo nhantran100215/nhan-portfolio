@@ -69,7 +69,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: `${assetsPath}/index.html`,
-      favicon: `${assetsPath}/favicon.ico`
+      favicon: `${assetsPath}/favicon.ico`,
     }),
     new webpack.DefinePlugin({
       // '/public': JSON.stringify(path.resolve(rootDir,"public")),
